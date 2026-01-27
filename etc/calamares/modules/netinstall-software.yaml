@@ -33,9 +33,32 @@
     - name: "Mullvad Browser"
       package: mullvad-browser-bin
       description: "Privacy-focused browser by Mullvad VPN"
+    - name: "Helium Browser"
+      package: helium-browser-bin
+      description: "Private &, fast web browser based on Chromium"
+    - name: "Zen Browser"
+      package: zen-browser-bin
+      description: "Performance oriented Firefox-based web browser"
     - name: "Ungoogled Chromium"
       package: ungoogled-chromium-bin
       description: "Chromium without Google services"
+
+- name: "BTRFS Support"
+  description: "In case of BTFRS select preferred method"
+  critical: false
+  hidden: false
+  selected: false
+  expanded: false
+  packages:
+    - name: "Snapper Support"
+      package: snapper-support
+      description: "Snapper with snap-pac and grub-btrfs support"
+    - name: "BTRFS Assistant"
+      package: btrfs-assistant
+      description: "Manage BTRFS subvolumes and Snapper snapshots"
+    - name: "Timeshift Autosnap"
+      package: timeshift-autosnap
+      description: "Runs before package upgrade using Pacman hook."
 
 - name: "VPN Clients"
   description: "Secure your internet connection with VPN services"
@@ -50,9 +73,6 @@
     - name: "Mozilla VPN"
       package: mozillavpn
       description: "Privacy-focused VPN by Mozilla"
-    - name: "Mullvad VPN"
-      package: mullvad-vpn
-      description: "Anonymous VPN with no logging"
     - name: "ProtonVPN"
       package: proton-vpn-cli
       description: "Secure VPN by the makers of ProtonMail"
@@ -185,6 +205,9 @@
     - name: "Krita"
       package: krita
       description: "Professional digital painting application"
+    - name: "Inkscape"
+      package: inkscape
+      description: "Professional vector graphics editor"
     - name: "Blender"
       package: blender
       description: "3D creation suite for modeling and animation"
@@ -254,7 +277,7 @@
     - name: "DejaVu Fonts"
       package: ttf-dejavu
       description: "Improved Bitstream Vera fonts"
-    - name: "Asian Fonts"
+    - name: "Asian Fonts (>1GB)"
       package: asian-fonts
       description: "CJK (Chinese, Japanese, Korean) fonts"
     - name: "Caladea"
